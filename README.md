@@ -6,10 +6,14 @@ ans =
    2.181818181818182
 >> r
 
- 
+```c
+function [C]=cel(f)
+C=(f-32)*5/9;
+ ```
+
 >> ftemp=cel(5)
-ftemp =
-   -15
+ftemp =-15
+   
 >> x
 x =
   Columns 1 through 10
@@ -32,7 +36,6 @@ ans =
    0.100000000000000   0.090909090909091   0.083333333333333
   Columns 13 through 14
    0.076923076923077   0.071428571428571
-   
 ```c
 function [C]=cel(f)
 C=(f-32)*5/9;
@@ -81,10 +84,6 @@ ans =
 >> ezplot('y=sqrt(x)')
 >> x=-5:0.1:5;
 >> y=sqrt(x);
->> polt(x,y)
-??? Undefined function or method 'polt' for input arguments of
-type 'double'.
- 
 >> plot(x,y)
 Warning: Imaginary parts of complex X and/or Y arguments ignored 
 >> plot(x,y,'g')
